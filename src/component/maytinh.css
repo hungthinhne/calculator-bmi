@@ -1,0 +1,82 @@
+.container{
+   align-items: center; 
+   justify-content: center;
+   min-width:100vw ;
+   min-height: 100vh;
+   display: flex;
+}
+
+.calc{
+    width: 100%;
+    max-width: 370px;
+    padding: 30px 10px 10px 10px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.bot{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+    height: 75px;
+    border-radius: 5px;
+    font-size: 23px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+button:active{
+    background-color: lightgray;
+}
+
+
+.clear{
+    grid-column: 1/3;
+}
+
+.eq{
+    grid-column: 3/5
+}
+
+.divresul{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.resul{
+    width: 100%;
+    font-size: 40px;
+    background-color: inherit;
+    text-align: right;
+    color: white;
+    border: none;
+    height: auto;
+    outline: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.color-black{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.color-main{
+    background-color: rgb(82, 179, 220);
+    color: black;
+}
+
+.color-calc{
+    background-color: rgb(82, 179, 220);
+    color: white;
+}

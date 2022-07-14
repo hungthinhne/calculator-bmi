@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import MayTinh from './component/maytinh';
+import Maytinh2 from './component/maytinh2/Maytinh2';
+import Bmi from './component/BMI/Bmi';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/maytinh' element={<MayTinh />} />
+          <Route path='/maytinh2' element={<Maytinh2 />} />
+          <Route path='/bmi' element={<Bmi />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+
   );
 }
 
